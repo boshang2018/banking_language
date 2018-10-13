@@ -425,13 +425,22 @@ public interface BankingPackage extends EPackage {
 	int SCRIPT_STEP__NEXT = 0;
 
 	/**
+	 * The feature id for the '<em><b>Has Run</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCRIPT_STEP__HAS_RUN = 1;
+
+	/**
 	 * The number of structural features of the '<em>Script Step</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCRIPT_STEP_FEATURE_COUNT = 1;
+	int SCRIPT_STEP_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Script Step</em>' class.
@@ -460,6 +469,15 @@ public interface BankingPackage extends EPackage {
 	 * @ordered
 	 */
 	int TRANSACTION_STEP__NEXT = SCRIPT_STEP__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>Has Run</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSACTION_STEP__HAS_RUN = SCRIPT_STEP__HAS_RUN;
 
 	/**
 	 * The feature id for the '<em><b>Account ID</b></em>' attribute.
@@ -517,6 +535,15 @@ public interface BankingPackage extends EPackage {
 	int WITHDRAWAL__NEXT = TRANSACTION_STEP__NEXT;
 
 	/**
+	 * The feature id for the '<em><b>Has Run</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WITHDRAWAL__HAS_RUN = TRANSACTION_STEP__HAS_RUN;
+
+	/**
 	 * The feature id for the '<em><b>Account ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -572,6 +599,15 @@ public interface BankingPackage extends EPackage {
 	int DEPOSIT__NEXT = TRANSACTION_STEP__NEXT;
 
 	/**
+	 * The feature id for the '<em><b>Has Run</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEPOSIT__HAS_RUN = TRANSACTION_STEP__HAS_RUN;
+
+	/**
 	 * The feature id for the '<em><b>Account ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -625,6 +661,15 @@ public interface BankingPackage extends EPackage {
 	 * @ordered
 	 */
 	int CREATE_ACCOUNT__NEXT = SCRIPT_STEP__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>Has Run</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_ACCOUNT__HAS_RUN = SCRIPT_STEP__HAS_RUN;
 
 	/**
 	 * The feature id for the '<em><b>Client Name</b></em>' attribute.
@@ -917,6 +962,17 @@ public interface BankingPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getScriptStep_Next();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uk.ac.kcl.inf.modelling.banking.bank.ScriptStep#isHasRun <em>Has Run</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Has Run</em>'.
+	 * @see uk.ac.kcl.inf.modelling.banking.bank.ScriptStep#isHasRun()
+	 * @see #getScriptStep()
+	 * @generated
+	 */
+	EAttribute getScriptStep_HasRun();
 
 	/**
 	 * Returns the meta object for class '{@link uk.ac.kcl.inf.modelling.banking.bank.Withdrawal <em>Withdrawal</em>}'.
@@ -1232,6 +1288,14 @@ public interface BankingPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SCRIPT_STEP__NEXT = eINSTANCE.getScriptStep_Next();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Run</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SCRIPT_STEP__HAS_RUN = eINSTANCE.getScriptStep_HasRun();
 
 		/**
 		 * The meta object literal for the '{@link uk.ac.kcl.inf.modelling.banking.bank.impl.WithdrawalImpl <em>Withdrawal</em>}' class.

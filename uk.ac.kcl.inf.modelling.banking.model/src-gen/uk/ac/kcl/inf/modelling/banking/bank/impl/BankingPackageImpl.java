@@ -399,6 +399,15 @@ public class BankingPackageImpl extends EPackageImpl implements BankingPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getScriptStep_HasRun() {
+		return (EAttribute) scriptStepEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getWithdrawal() {
 		return withdrawalEClass;
 	}
@@ -526,6 +535,7 @@ public class BankingPackageImpl extends EPackageImpl implements BankingPackage {
 
 		scriptStepEClass = createEClass(SCRIPT_STEP);
 		createEReference(scriptStepEClass, SCRIPT_STEP__NEXT);
+		createEAttribute(scriptStepEClass, SCRIPT_STEP__HAS_RUN);
 
 		withdrawalEClass = createEClass(WITHDRAWAL);
 
@@ -634,11 +644,13 @@ public class BankingPackageImpl extends EPackageImpl implements BankingPackage {
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
 
-		initEClass(scriptStepEClass, ScriptStep.class, "ScriptStep", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(scriptStepEClass, ScriptStep.class, "ScriptStep", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getScriptStep_Next(), this.getScriptStep(), null, "next", null, 0, 1, ScriptStep.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScriptStep_HasRun(), ecorePackage.getEBoolean(), "hasRun", "false", 0, 1, ScriptStep.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(withdrawalEClass, Withdrawal.class, "Withdrawal", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);

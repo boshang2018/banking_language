@@ -17,9 +17,12 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 
+import org.eclipse.emf.edit.provider.ViewerNotification;
 import uk.ac.kcl.inf.modelling.banking.bank.BankingPackage;
+import uk.ac.kcl.inf.modelling.banking.bank.ScriptStep;
 
 /**
  * This is the item provider adapter for a {@link uk.ac.kcl.inf.modelling.banking.bank.ScriptStep} object.
@@ -51,6 +54,7 @@ public class ScriptStepItemProvider extends ItemProviderAdapter implements IEdit
 			super.getPropertyDescriptors(object);
 
 			addNextPropertyDescriptor(object);
+			addHasRunPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -68,6 +72,22 @@ public class ScriptStepItemProvider extends ItemProviderAdapter implements IEdit
 						getString("_UI_PropertyDescriptor_description", "_UI_ScriptStep_next_feature",
 								"_UI_ScriptStep_type"),
 						BankingPackage.Literals.SCRIPT_STEP__NEXT, true, false, true, null, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Has Run feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addHasRunPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_ScriptStep_hasRun_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_ScriptStep_hasRun_feature",
+								"_UI_ScriptStep_type"),
+						BankingPackage.Literals.SCRIPT_STEP__HAS_RUN, true, false, false,
+						ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -99,7 +119,8 @@ public class ScriptStepItemProvider extends ItemProviderAdapter implements IEdit
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_ScriptStep_type");
+		ScriptStep scriptStep = (ScriptStep) object;
+		return getString("_UI_ScriptStep_type") + " " + scriptStep.isHasRun();
 	}
 
 	/**
@@ -112,6 +133,12 @@ public class ScriptStepItemProvider extends ItemProviderAdapter implements IEdit
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
+
+		switch (notification.getFeatureID(ScriptStep.class)) {
+		case BankingPackage.SCRIPT_STEP__HAS_RUN:
+			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			return;
+		}
 		super.notifyChanged(notification);
 	}
 

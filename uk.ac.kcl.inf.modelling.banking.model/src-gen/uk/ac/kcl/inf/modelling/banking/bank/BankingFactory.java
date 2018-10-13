@@ -76,15 +76,6 @@ public interface BankingFactory extends EFactory {
 	Script createScript();
 
 	/**
-	 * Returns a new object of class '<em>Script Step</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Script Step</em>'.
-	 * @generated
-	 */
-	ScriptStep createScriptStep();
-
-	/**
 	 * Returns a new object of class '<em>Withdrawal</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

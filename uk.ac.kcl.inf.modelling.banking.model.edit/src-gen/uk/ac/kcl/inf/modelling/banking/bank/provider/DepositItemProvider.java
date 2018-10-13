@@ -74,7 +74,7 @@ public class DepositItemProvider extends TransactionStepItemProvider {
 	@Override
 	public String getText(Object object) {
 		Deposit deposit = (Deposit) object;
-		return getString("_UI_Deposit_type") + " " + deposit.getAccountID();
+		return getString("_UI_Deposit_type") + " " + deposit.isHasRun();
 	}
 
 	/**

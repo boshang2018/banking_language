@@ -183,9 +183,6 @@ public class ScriptItemProvider extends ItemProviderAdapter implements IEditingD
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
 		newChildDescriptors.add(createChildParameter(BankingPackage.Literals.SCRIPT__STEPS,
-				BankingFactory.eINSTANCE.createScriptStep()));
-
-		newChildDescriptors.add(createChildParameter(BankingPackage.Literals.SCRIPT__STEPS,
 				BankingFactory.eINSTANCE.createWithdrawal()));
 
 		newChildDescriptors.add(

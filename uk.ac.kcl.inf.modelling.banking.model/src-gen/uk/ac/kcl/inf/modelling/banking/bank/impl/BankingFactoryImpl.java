@@ -68,8 +68,6 @@ public class BankingFactoryImpl extends EFactoryImpl implements BankingFactory {
 			return createBankingProgram();
 		case BankingPackage.SCRIPT:
 			return createScript();
-		case BankingPackage.SCRIPT_STEP:
-			return createScriptStep();
 		case BankingPackage.WITHDRAWAL:
 			return createWithdrawal();
 		case BankingPackage.DEPOSIT:
@@ -139,16 +137,6 @@ public class BankingFactoryImpl extends EFactoryImpl implements BankingFactory {
 	public Script createScript() {
 		ScriptImpl script = new ScriptImpl();
 		return script;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ScriptStep createScriptStep() {
-		ScriptStepImpl scriptStep = new ScriptStepImpl();
-		return scriptStep;
 	}
 
 	/**

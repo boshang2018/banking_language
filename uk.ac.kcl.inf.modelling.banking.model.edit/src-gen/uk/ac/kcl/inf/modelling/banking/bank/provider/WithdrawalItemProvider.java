@@ -74,7 +74,7 @@ public class WithdrawalItemProvider extends TransactionStepItemProvider {
 	@Override
 	public String getText(Object object) {
 		Withdrawal withdrawal = (Withdrawal) object;
-		return getString("_UI_Withdrawal_type") + " " + withdrawal.getAccountID();
+		return getString("_UI_Withdrawal_type") + " " + withdrawal.isHasRun();
 	}
 
 	/**

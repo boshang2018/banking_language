@@ -211,29 +211,6 @@ public class BankingItemProviderAdapterFactory extends BankingAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uk.ac.kcl.inf.modelling.banking.bank.ScriptStep} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ScriptStepItemProvider scriptStepItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uk.ac.kcl.inf.modelling.banking.bank.ScriptStep}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createScriptStepAdapter() {
-		if (scriptStepItemProvider == null) {
-			scriptStepItemProvider = new ScriptStepItemProvider(this);
-		}
-
-		return scriptStepItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link uk.ac.kcl.inf.modelling.banking.bank.Withdrawal} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -413,8 +390,6 @@ public class BankingItemProviderAdapterFactory extends BankingAdapterFactory
 			bankingProgramItemProvider.dispose();
 		if (scriptItemProvider != null)
 			scriptItemProvider.dispose();
-		if (scriptStepItemProvider != null)
-			scriptStepItemProvider.dispose();
 		if (withdrawalItemProvider != null)
 			withdrawalItemProvider.dispose();
 		if (depositItemProvider != null)

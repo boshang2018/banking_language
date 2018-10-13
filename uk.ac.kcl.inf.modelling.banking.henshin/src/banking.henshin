@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_OgJHEM70EeiPGIIZxVzTaA">
+  <imports href="http://www.example.org/bank#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_SQGKoM70EeiPGIIZxVzTaA" name="startScript">
+    <lhs xmi:id="_SQGKpc70EeiPGIIZxVzTaA" name="Lhs">
+      <nodes xmi:id="_UCPdsM70EeiPGIIZxVzTaA" outgoing="_YMCkoM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_U9yf8M70EeiPGIIZxVzTaA" incoming="_YMCkoM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//ScriptStep"/>
+      </nodes>
+      <edges xmi:id="_YMCkoM70EeiPGIIZxVzTaA" source="_UCPdsM70EeiPGIIZxVzTaA" target="_U9yf8M70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Script/start"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_WJpPEM70EeiPGIIZxVzTaA">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_WJpPEc70EeiPGIIZxVzTaA">
+          <conclusion xmi:id="_WJpPEs70EeiPGIIZxVzTaA">
+            <nodes xmi:id="_WJpPE870EeiPGIIZxVzTaA" outgoing="_Xl5KoM70EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//Script"/>
+            </nodes>
+            <nodes xmi:id="_U15IMM70EeiPGIIZxVzTaA" incoming="_Xl5KoM70EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//ScriptStep"/>
+            </nodes>
+            <nodes xmi:id="_WJpPF870EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//ScriptStep"/>
+            </nodes>
+            <edges xmi:id="_Xl5KoM70EeiPGIIZxVzTaA" source="_WJpPE870EeiPGIIZxVzTaA" target="_U15IMM70EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//Script/current"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_WJpPFM70EeiPGIIZxVzTaA" origin="_UCPdsM70EeiPGIIZxVzTaA" image="_WJpPE870EeiPGIIZxVzTaA"/>
+          <mappings xmi:id="_WJpPGM70EeiPGIIZxVzTaA" origin="_U9yf8M70EeiPGIIZxVzTaA" image="_WJpPF870EeiPGIIZxVzTaA"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_SQPUkM70EeiPGIIZxVzTaA" name="Rhs">
+      <nodes xmi:id="_UCPdsc70EeiPGIIZxVzTaA" outgoing="_YMCkoc70EeiPGIIZxVzTaA _YyfgoM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_U9yf8c70EeiPGIIZxVzTaA" incoming="_YMCkoc70EeiPGIIZxVzTaA _YyfgoM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//ScriptStep"/>
+      </nodes>
+      <edges xmi:id="_YMCkoc70EeiPGIIZxVzTaA" source="_UCPdsc70EeiPGIIZxVzTaA" target="_U9yf8c70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Script/start"/>
+      </edges>
+      <edges xmi:id="_YyfgoM70EeiPGIIZxVzTaA" source="_UCPdsc70EeiPGIIZxVzTaA" target="_U9yf8c70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Script/current"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_UCPdss70EeiPGIIZxVzTaA" origin="_UCPdsM70EeiPGIIZxVzTaA" image="_UCPdsc70EeiPGIIZxVzTaA"/>
+    <mappings xmi:id="_U9yf8s70EeiPGIIZxVzTaA" origin="_U9yf8M70EeiPGIIZxVzTaA" image="_U9yf8c70EeiPGIIZxVzTaA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_hCEKIM70EeiPGIIZxVzTaA" name="createAccount">
+    <parameters xmi:id="_lzWH0M70EeiPGIIZxVzTaA" name="id" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_lzWH0c70EeiPGIIZxVzTaA" name="name" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_hCEKJc70EeiPGIIZxVzTaA" name="Lhs">
+      <nodes xmi:id="_qZNfsM70EeiPGIIZxVzTaA" outgoing="_sosPAM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_rX3gUM70EeiPGIIZxVzTaA" incoming="_sosPAM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//CreateAccount"/>
+        <attributes xmi:id="_t4j7cM70EeiPGIIZxVzTaA" value="id">
+          <type href="http://www.example.org/bank#//CreateAccount/accountID"/>
+        </attributes>
+        <attributes xmi:id="_ujK-sM70EeiPGIIZxVzTaA" value="name">
+          <type href="http://www.example.org/bank#//CreateAccount/clientName"/>
+        </attributes>
+        <attributes xmi:id="_mSFc0M71EeiIfLl0kJySPA" value="false">
+          <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_6gWiYM70EeiPGIIZxVzTaA" outgoing="_FjbOQM71EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Bank"/>
+      </nodes>
+      <nodes xmi:id="_7vDxMM70EeiPGIIZxVzTaA" incoming="_FjbOQM71EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Client"/>
+        <attributes xmi:id="_BZYPsM71EeiPGIIZxVzTaA" value="name">
+          <type href="http://www.example.org/bank#//Person/name"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_sosPAM70EeiPGIIZxVzTaA" source="_qZNfsM70EeiPGIIZxVzTaA" target="_rX3gUM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Script/current"/>
+      </edges>
+      <edges xmi:id="_FjbOQM71EeiPGIIZxVzTaA" source="_6gWiYM70EeiPGIIZxVzTaA" target="_7vDxMM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Bank/clients"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_9uCmYM70EeiPGIIZxVzTaA">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_9uCmYc70EeiPGIIZxVzTaA">
+          <conclusion xmi:id="_9uCmYs70EeiPGIIZxVzTaA">
+            <nodes xmi:id="_9uCmY870EeiPGIIZxVzTaA" outgoing="_9uCmac70EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//Script"/>
+            </nodes>
+            <nodes xmi:id="_9uCmZc70EeiPGIIZxVzTaA" incoming="_9uCmac70EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//CreateAccount"/>
+              <attributes xmi:id="_9uCmZs70EeiPGIIZxVzTaA" value="id">
+                <type href="http://www.example.org/bank#//CreateAccount/accountID"/>
+              </attributes>
+              <attributes xmi:id="_9uCmZ870EeiPGIIZxVzTaA" value="name">
+                <type href="http://www.example.org/bank#//CreateAccount/clientName"/>
+              </attributes>
+              <attributes xmi:id="_mSFc0s71EeiIfLl0kJySPA" value="false">
+                <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_9uCmbc70EeiPGIIZxVzTaA" outgoing="_EuETkM71EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//Bank"/>
+            </nodes>
+            <nodes xmi:id="_9uCmcc70EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//Client"/>
+              <attributes xmi:id="_BZYPss71EeiPGIIZxVzTaA" value="name">
+                <type href="http://www.example.org/bank#//Person/name"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_8r2woM70EeiPGIIZxVzTaA" incoming="_EuETkM71EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//Account"/>
+              <attributes xmi:id="_-nRUcM70EeiPGIIZxVzTaA" value="id">
+                <type href="http://www.example.org/bank#//Account/id"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_9uCmac70EeiPGIIZxVzTaA" source="_9uCmY870EeiPGIIZxVzTaA" target="_9uCmZc70EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//Script/current"/>
+            </edges>
+            <edges xmi:id="_EuETkM71EeiPGIIZxVzTaA" source="_9uCmbc70EeiPGIIZxVzTaA" target="_8r2woM70EeiPGIIZxVzTaA">
+              <type href="http://www.example.org/bank#//Bank/accounts"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_9uCmZM70EeiPGIIZxVzTaA" origin="_qZNfsM70EeiPGIIZxVzTaA" image="_9uCmY870EeiPGIIZxVzTaA"/>
+          <mappings xmi:id="_9uCmaM70EeiPGIIZxVzTaA" origin="_rX3gUM70EeiPGIIZxVzTaA" image="_9uCmZc70EeiPGIIZxVzTaA"/>
+          <mappings xmi:id="_9uCmbs70EeiPGIIZxVzTaA" origin="_6gWiYM70EeiPGIIZxVzTaA" image="_9uCmbc70EeiPGIIZxVzTaA"/>
+          <mappings xmi:id="_9uCmcs70EeiPGIIZxVzTaA" origin="_7vDxMM70EeiPGIIZxVzTaA" image="_9uCmcc70EeiPGIIZxVzTaA"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_hCEKJs70EeiPGIIZxVzTaA" name="Rhs">
+      <nodes xmi:id="_qZNfsc70EeiPGIIZxVzTaA" outgoing="_XGSBAM71EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_rX3gUc70EeiPGIIZxVzTaA" incoming="_XGSBAM71EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//CreateAccount"/>
+        <attributes xmi:id="_t4j7cc70EeiPGIIZxVzTaA" value="id">
+          <type href="http://www.example.org/bank#//CreateAccount/accountID"/>
+        </attributes>
+        <attributes xmi:id="_ujK-sc70EeiPGIIZxVzTaA" value="name">
+          <type href="http://www.example.org/bank#//CreateAccount/clientName"/>
+        </attributes>
+        <attributes xmi:id="_mSFc0c71EeiIfLl0kJySPA" value="true">
+          <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_6gWiYc70EeiPGIIZxVzTaA" outgoing="_FjbOQc71EeiPGIIZxVzTaA _Ken88M71EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Bank"/>
+      </nodes>
+      <nodes xmi:id="_7vDxMc70EeiPGIIZxVzTaA" incoming="_FjbOQc71EeiPGIIZxVzTaA" outgoing="_GJtLIM71EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Client"/>
+        <attributes xmi:id="_BZYPsc71EeiPGIIZxVzTaA" value="name">
+          <type href="http://www.example.org/bank#//Person/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_81sCEM70EeiPGIIZxVzTaA" incoming="_GJtLIM71EeiPGIIZxVzTaA _Ken88M71EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Account"/>
+        <attributes xmi:id="_AYYFsM71EeiPGIIZxVzTaA" value="id">
+          <type href="http://www.example.org/bank#//Account/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_FjbOQc71EeiPGIIZxVzTaA" source="_6gWiYc70EeiPGIIZxVzTaA" target="_7vDxMc70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Bank/clients"/>
+      </edges>
+      <edges xmi:id="_GJtLIM71EeiPGIIZxVzTaA" source="_7vDxMc70EeiPGIIZxVzTaA" target="_81sCEM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Client/accounts"/>
+      </edges>
+      <edges xmi:id="_Ken88M71EeiPGIIZxVzTaA" source="_6gWiYc70EeiPGIIZxVzTaA" target="_81sCEM70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Bank/accounts"/>
+      </edges>
+      <edges xmi:id="_XGSBAM71EeiPGIIZxVzTaA" source="_qZNfsc70EeiPGIIZxVzTaA" target="_rX3gUc70EeiPGIIZxVzTaA">
+        <type href="http://www.example.org/bank#//Script/current"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_qZNfss70EeiPGIIZxVzTaA" origin="_qZNfsM70EeiPGIIZxVzTaA" image="_qZNfsc70EeiPGIIZxVzTaA"/>
+    <mappings xmi:id="_rX3gUs70EeiPGIIZxVzTaA" origin="_rX3gUM70EeiPGIIZxVzTaA" image="_rX3gUc70EeiPGIIZxVzTaA"/>
+    <mappings xmi:id="_6gWiYs70EeiPGIIZxVzTaA" origin="_6gWiYM70EeiPGIIZxVzTaA" image="_6gWiYc70EeiPGIIZxVzTaA"/>
+    <mappings xmi:id="_7vDxMs70EeiPGIIZxVzTaA" origin="_7vDxMM70EeiPGIIZxVzTaA" image="_7vDxMc70EeiPGIIZxVzTaA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_oShqkM71EeiIfLl0kJySPA" name="movePC">
+    <lhs xmi:id="_oSrbkM71EeiIfLl0kJySPA" name="Lhs">
+      <nodes xmi:id="_qFrqQM71EeiIfLl0kJySPA" outgoing="_sOM18M71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_q5j-QM71EeiIfLl0kJySPA" incoming="_sOM18M71EeiIfLl0kJySPA" outgoing="_s37vcM71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//ScriptStep"/>
+        <attributes xmi:id="_tspw8M71EeiIfLl0kJySPA" value="true">
+          <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rDjAsM71EeiIfLl0kJySPA" incoming="_s37vcM71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//ScriptStep"/>
+      </nodes>
+      <edges xmi:id="_sOM18M71EeiIfLl0kJySPA" source="_qFrqQM71EeiIfLl0kJySPA" target="_q5j-QM71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script/current"/>
+      </edges>
+      <edges xmi:id="_s37vcM71EeiIfLl0kJySPA" source="_q5j-QM71EeiIfLl0kJySPA" target="_rDjAsM71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//ScriptStep/next"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_oSrbkc71EeiIfLl0kJySPA" name="Rhs">
+      <nodes xmi:id="_qFrqQc71EeiIfLl0kJySPA" outgoing="_sovc4M71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_q5j-Qc71EeiIfLl0kJySPA" outgoing="_s37vcc71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//ScriptStep"/>
+        <attributes xmi:id="_tspw8c71EeiIfLl0kJySPA" value="true">
+          <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_rDsKoM71EeiIfLl0kJySPA" incoming="_s37vcc71EeiIfLl0kJySPA _sovc4M71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//ScriptStep"/>
+      </nodes>
+      <edges xmi:id="_s37vcc71EeiIfLl0kJySPA" source="_q5j-Qc71EeiIfLl0kJySPA" target="_rDsKoM71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//ScriptStep/next"/>
+      </edges>
+      <edges xmi:id="_sovc4M71EeiIfLl0kJySPA" source="_qFrqQc71EeiIfLl0kJySPA" target="_rDsKoM71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script/current"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_qFrqQs71EeiIfLl0kJySPA" origin="_qFrqQM71EeiIfLl0kJySPA" image="_qFrqQc71EeiIfLl0kJySPA"/>
+    <mappings xmi:id="_q5j-Qs71EeiIfLl0kJySPA" origin="_q5j-QM71EeiIfLl0kJySPA" image="_q5j-Qc71EeiIfLl0kJySPA"/>
+    <mappings xmi:id="_rDsKoc71EeiIfLl0kJySPA" origin="_rDjAsM71EeiIfLl0kJySPA" image="_rDsKoM71EeiIfLl0kJySPA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_5gUMQM71EeiIfLl0kJySPA" name="withdraw">
+    <parameters xmi:id="_-mgqAM71EeiIfLl0kJySPA" name="accountID" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_-mgqAc71EeiIfLl0kJySPA" name="amount" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_NoQK4M72EeiIfLl0kJySPA" name="credit" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <lhs xmi:id="_5gUMQ871EeiIfLl0kJySPA" name="Lhs">
+      <nodes xmi:id="_5gUMRM71EeiIfLl0kJySPA" outgoing="_5gUMTM71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_5gUMRc71EeiIfLl0kJySPA" incoming="_5gUMTM71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Withdrawal"/>
+        <attributes xmi:id="_5gUMSM71EeiIfLl0kJySPA" value="false">
+          <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+        </attributes>
+        <attributes xmi:id="_FHKTkM72EeiIfLl0kJySPA" value="accountID">
+          <type href="http://www.example.org/bank#//TransactionStep/accountID"/>
+        </attributes>
+        <attributes xmi:id="_FyOp0M72EeiIfLl0kJySPA" value="amount">
+          <type href="http://www.example.org/bank#//TransactionStep/amount"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_5gUMas71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Account"/>
+        <attributes xmi:id="_5gUMa871EeiIfLl0kJySPA" value="accountID">
+          <type href="http://www.example.org/bank#//Account/id"/>
+        </attributes>
+        <attributes xmi:id="_LyeVAM72EeiIfLl0kJySPA" value="credit">
+          <type href="http://www.example.org/bank#//Account/credit"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_5gUMTM71EeiIfLl0kJySPA" source="_5gUMRM71EeiIfLl0kJySPA" target="_5gUMRc71EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script/current"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_5gUMTs71EeiIfLl0kJySPA">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_5gUMT871EeiIfLl0kJySPA">
+          <conclusion xmi:id="_5gUMUM71EeiIfLl0kJySPA">
+            <nodes xmi:id="_5gUMUc71EeiIfLl0kJySPA" outgoing="_5gUMW871EeiIfLl0kJySPA">
+              <type href="http://www.example.org/bank#//Script"/>
+            </nodes>
+            <nodes xmi:id="_5gUMUs71EeiIfLl0kJySPA" incoming="_5gUMW871EeiIfLl0kJySPA">
+              <type href="http://www.example.org/bank#//CreateAccount"/>
+              <attributes xmi:id="_5gUMVc71EeiIfLl0kJySPA" value="false">
+                <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+              </attributes>
+              <attributes xmi:id="_FHKTks72EeiIfLl0kJySPA" value="accountID">
+                <type href="http://www.example.org/bank#//TransactionStep/accountID"/>
+              </attributes>
+              <attributes xmi:id="_FyOp0s72EeiIfLl0kJySPA" value="amount">
+                <type href="http://www.example.org/bank#//TransactionStep/amount"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_5gUMW871EeiIfLl0kJySPA" source="_5gUMUc71EeiIfLl0kJySPA" target="_5gUMUs71EeiIfLl0kJySPA">
+              <type href="http://www.example.org/bank#//Script/current"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_5gUMXc71EeiIfLl0kJySPA" origin="_5gUMRM71EeiIfLl0kJySPA" image="_5gUMUc71EeiIfLl0kJySPA"/>
+          <mappings xmi:id="_5gUMXs71EeiIfLl0kJySPA" origin="_5gUMRc71EeiIfLl0kJySPA" image="_5gUMUs71EeiIfLl0kJySPA"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_5gUMYc71EeiIfLl0kJySPA" name="Rhs">
+      <nodes xmi:id="_5gUMYs71EeiIfLl0kJySPA" outgoing="_5gUMb871EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_5gUMY871EeiIfLl0kJySPA" incoming="_5gUMb871EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Withdrawal"/>
+        <attributes xmi:id="_5gUMZs71EeiIfLl0kJySPA" value="true">
+          <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+        </attributes>
+        <attributes xmi:id="_FHKTkc72EeiIfLl0kJySPA" value="accountID">
+          <type href="http://www.example.org/bank#//TransactionStep/accountID"/>
+        </attributes>
+        <attributes xmi:id="_FyOp0c72EeiIfLl0kJySPA" value="amount">
+          <type href="http://www.example.org/bank#//TransactionStep/amount"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_J6oCkM72EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Account"/>
+        <attributes xmi:id="_J6oCkc72EeiIfLl0kJySPA" value="accountID">
+          <type href="http://www.example.org/bank#//Account/id"/>
+        </attributes>
+        <attributes xmi:id="_LyeVAc72EeiIfLl0kJySPA" value="credit-amount">
+          <type href="http://www.example.org/bank#//Account/credit"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_5gUMb871EeiIfLl0kJySPA" source="_5gUMYs71EeiIfLl0kJySPA" target="_5gUMY871EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script/current"/>
+      </edges>
+    </rhs>
+    <attributeConditions xmi:id="_Q6_G8M72EeiIfLl0kJySPA" conditionText="credit >= amount"/>
+    <mappings xmi:id="_5gUMcM71EeiIfLl0kJySPA" origin="_5gUMRM71EeiIfLl0kJySPA" image="_5gUMYs71EeiIfLl0kJySPA"/>
+    <mappings xmi:id="_5gUMcc71EeiIfLl0kJySPA" origin="_5gUMRc71EeiIfLl0kJySPA" image="_5gUMY871EeiIfLl0kJySPA"/>
+    <mappings xmi:id="_J6oCks72EeiIfLl0kJySPA" origin="_5gUMas71EeiIfLl0kJySPA" image="_J6oCkM72EeiIfLl0kJySPA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_T04FMM72EeiIfLl0kJySPA" name="deposit">
+    <parameters xmi:id="_T04FMc72EeiIfLl0kJySPA" name="accountID" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_T04FMs72EeiIfLl0kJySPA" name="amount" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <parameters xmi:id="_T04FM872EeiIfLl0kJySPA" name="credit" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </parameters>
+    <lhs xmi:id="_T04FNM72EeiIfLl0kJySPA" name="Lhs">
+      <nodes xmi:id="_T04FNc72EeiIfLl0kJySPA" outgoing="_T04FPc72EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_T04FNs72EeiIfLl0kJySPA" incoming="_T04FPc72EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Deposit"/>
+        <attributes xmi:id="_T04FN872EeiIfLl0kJySPA" value="false">
+          <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+        </attributes>
+        <attributes xmi:id="_T04FOM72EeiIfLl0kJySPA" value="accountID">
+          <type href="http://www.example.org/bank#//TransactionStep/accountID"/>
+        </attributes>
+        <attributes xmi:id="_T04FOc72EeiIfLl0kJySPA" value="amount">
+          <type href="http://www.example.org/bank#//TransactionStep/amount"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_T04FOs72EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Account"/>
+        <attributes xmi:id="_T04FO872EeiIfLl0kJySPA" value="accountID">
+          <type href="http://www.example.org/bank#//Account/id"/>
+        </attributes>
+        <attributes xmi:id="_T04FPM72EeiIfLl0kJySPA" value="credit">
+          <type href="http://www.example.org/bank#//Account/credit"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_T04FPc72EeiIfLl0kJySPA" source="_T04FNc72EeiIfLl0kJySPA" target="_T04FNs72EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script/current"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_T04FPs72EeiIfLl0kJySPA">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_T04FP872EeiIfLl0kJySPA">
+          <conclusion xmi:id="_T04FQM72EeiIfLl0kJySPA">
+            <nodes xmi:id="_T04FQc72EeiIfLl0kJySPA" outgoing="_T04FRs72EeiIfLl0kJySPA">
+              <type href="http://www.example.org/bank#//Script"/>
+            </nodes>
+            <nodes xmi:id="_T04FQs72EeiIfLl0kJySPA" incoming="_T04FRs72EeiIfLl0kJySPA">
+              <type href="http://www.example.org/bank#//CreateAccount"/>
+              <attributes xmi:id="_T04FQ872EeiIfLl0kJySPA" value="false">
+                <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+              </attributes>
+              <attributes xmi:id="_T04FRM72EeiIfLl0kJySPA" value="accountID">
+                <type href="http://www.example.org/bank#//TransactionStep/accountID"/>
+              </attributes>
+              <attributes xmi:id="_T04FRc72EeiIfLl0kJySPA" value="amount">
+                <type href="http://www.example.org/bank#//TransactionStep/amount"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_T04FRs72EeiIfLl0kJySPA" source="_T04FQc72EeiIfLl0kJySPA" target="_T04FQs72EeiIfLl0kJySPA">
+              <type href="http://www.example.org/bank#//Script/current"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_T04FR872EeiIfLl0kJySPA" origin="_T04FNc72EeiIfLl0kJySPA" image="_T04FQc72EeiIfLl0kJySPA"/>
+          <mappings xmi:id="_T04FSM72EeiIfLl0kJySPA" origin="_T04FNs72EeiIfLl0kJySPA" image="_T04FQs72EeiIfLl0kJySPA"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_T04FSc72EeiIfLl0kJySPA" name="Rhs">
+      <nodes xmi:id="_T04FSs72EeiIfLl0kJySPA" outgoing="_T04FUs72EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script"/>
+      </nodes>
+      <nodes xmi:id="_T04FS872EeiIfLl0kJySPA" incoming="_T04FUs72EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Deposit"/>
+        <attributes xmi:id="_T04FTM72EeiIfLl0kJySPA" value="true">
+          <type href="http://www.example.org/bank#//ScriptStep/hasRun"/>
+        </attributes>
+        <attributes xmi:id="_T04FTc72EeiIfLl0kJySPA" value="accountID">
+          <type href="http://www.example.org/bank#//TransactionStep/accountID"/>
+        </attributes>
+        <attributes xmi:id="_T04FTs72EeiIfLl0kJySPA" value="amount">
+          <type href="http://www.example.org/bank#//TransactionStep/amount"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_T04FT872EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Account"/>
+        <attributes xmi:id="_T04FUM72EeiIfLl0kJySPA" value="accountID">
+          <type href="http://www.example.org/bank#//Account/id"/>
+        </attributes>
+        <attributes xmi:id="_T04FUc72EeiIfLl0kJySPA" value="credit+amount">
+          <type href="http://www.example.org/bank#//Account/credit"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_T04FUs72EeiIfLl0kJySPA" source="_T04FSs72EeiIfLl0kJySPA" target="_T04FS872EeiIfLl0kJySPA">
+        <type href="http://www.example.org/bank#//Script/current"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_T04FVM72EeiIfLl0kJySPA" origin="_T04FNc72EeiIfLl0kJySPA" image="_T04FSs72EeiIfLl0kJySPA"/>
+    <mappings xmi:id="_T04FVc72EeiIfLl0kJySPA" origin="_T04FNs72EeiIfLl0kJySPA" image="_T04FS872EeiIfLl0kJySPA"/>
+    <mappings xmi:id="_T04FVs72EeiIfLl0kJySPA" origin="_T04FOs72EeiIfLl0kJySPA" image="_T04FT872EeiIfLl0kJySPA"/>
+  </units>
+</henshin:Module>

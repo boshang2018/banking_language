@@ -101,7 +101,7 @@ public class TransactionStepItemProvider extends ScriptStepItemProvider {
 	@Override
 	public String getText(Object object) {
 		TransactionStep transactionStep = (TransactionStep) object;
-		return getString("_UI_TransactionStep_type") + " " + transactionStep.getAccountID();
+		return getString("_UI_TransactionStep_type") + " " + transactionStep.isHasRun();
 	}
 
 	/**
