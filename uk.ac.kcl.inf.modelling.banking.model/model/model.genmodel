@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/uk.ac.kcl.inf.modelling.banking.model/src-gen"
+    creationIcons="false" editDirectory="/uk.ac.kcl.inf.modelling.banking.model.edit/src-gen"
+    editorDirectory="/uk.ac.kcl.inf.modelling.banking.model.editor/src-gen" modelPluginID="uk.ac.kcl.inf.modelling.banking.model"
+    modelName="Model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>model.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Banking" basePackage="uk.ac.kcl.inf.modelling.banking" disposableProviderFactory="true"
+      ecorePackage="model.ecore#/">
+    <genClasses ecoreClass="model.ecore#//Bank">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Bank/accounts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Bank/managers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Bank/clients"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//Account">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Account/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Account/credit"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Account/owner"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//Manager">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Manager/clients"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Person/name"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//Client">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Client/manager"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Client/accounts"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//BankingProgram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//BankingProgram/bank"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//BankingProgram/scripts"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//Script">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Script/steps"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Script/current"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Script/start"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//ScriptStep">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//ScriptStep/next"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//Withdrawal"/>
+    <genClasses ecoreClass="model.ecore#//Deposit"/>
+    <genClasses image="false" ecoreClass="model.ecore#//TransactionStep">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TransactionStep/accountID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//TransactionStep/amount"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//CreateAccount">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//CreateAccount/clientName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//CreateAccount/accountID"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
