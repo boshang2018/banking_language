@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="banking" version="12.0.0.2017041100">
+  <ownedViewpoints name="MyViewpoint" modelFileExtension="banking">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Banking Diagram" domainClass="BankingProgram" enablePopupBars="true">
+      <metamodel href="http://www.example.org/bank#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="Client" domainClass="Client">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="7" workspacePath="/uk.ac.kcl.inf.modelling.banking.design/description/stick-clipart-9.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Manager" domainClass="Manager">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="10" workspacePath="/uk.ac.kcl.inf.modelling.banking.design/description/manager.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Account" domainClass="Account">
+          <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="aql:'Account #' + self.id + '. Balance: ' + self.credit" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="Manages" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Manager']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Client']" targetFinderExpression="feature:clients">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="manages">
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Owns" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Client']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Account']" targetFinderExpression="feature:accounts">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="Owns">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="Script" domainClass="Script" childrenPresentation="List">
+          <subNodeMappings name="ScriptStep" semanticCandidatesExpression="feature:steps" domainClass="ScriptStep">
+            <conditionnalStyles predicateExpression="aql:self.oclIsKindOf(bank::CreateAccount) and not (self.eContainer().current == self)">
+              <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="aql:'Create Account #' + self.oclAsType(bank::CreateAccount).accountID + ' for ' + self.oclAsType(bank::CreateAccount).clientName + '.'" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:self.oclIsKindOf(bank::Withdrawal) and not (self.eContainer().current == self)">
+              <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="aql:'Withdraw £' + self.oclAsType(bank::Withdrawal).amount + ' from account #' + self.oclAsType(bank::Withdrawal).accountID + '.'" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:self.oclIsKindOf(bank::Deposit) and not (self.eContainer().current == self)">
+              <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="aql:'Deposit £' + self.oclAsType(bank::Deposit).amount + ' into account #' + self.oclAsType(bank::Deposit).accountID + '.'" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:self.oclIsKindOf(bank::CreateAccount) and (self.eContainer().current == self)">
+              <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="aql:'Create Account #' + self.oclAsType(bank::CreateAccount).accountID + ' for ' + self.oclAsType(bank::CreateAccount).clientName + '.'" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:self.oclIsKindOf(bank::Withdrawal) and (self.eContainer().current == self)">
+              <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="aql:'Withdraw £' + self.oclAsType(bank::Withdrawal).amount + ' from account #' + self.oclAsType(bank::Withdrawal).accountID + '.'" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:self.oclIsKindOf(bank::Deposit) and (self.eContainer().current == self)">
+              <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="aql:'Deposit £' + self.oclAsType(bank::Deposit).amount + ' into account #' + self.oclAsType(bank::Deposit).accountID + '.'" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="Script">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="uk.ac.kcl.inf.modelling.banking.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

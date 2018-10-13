@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bank="http://www.example.org/bank" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_1GMQgM7YEeiPGIIZxVzTaA" selectedViews="_ri9PoM7sEeiPGIIZxVzTaA" version="12.1.0.201708031200">
+    <semanticResources>demo.banking</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_ri9PoM7sEeiPGIIZxVzTaA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_sK4LRM7sEeiPGIIZxVzTaA" name="Banking Diagram" repPath="#_sKcGYM7sEeiPGIIZxVzTaA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']"/>
+        <target xmi:type="bank:BankingProgram" href="demo.banking#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_sKvBUM7sEeiPGIIZxVzTaA" name="Banking Diagram" uid="_sKcGYM7sEeiPGIIZxVzTaA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_sK4LQM7sEeiPGIIZxVzTaA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_sK4LQc7sEeiPGIIZxVzTaA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_sLLtQM7sEeiPGIIZxVzTaA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_sLLtQc7sEeiPGIIZxVzTaA" type="Sirius" element="_sKvBUM7sEeiPGIIZxVzTaA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_QjrJQc7tEeiPGIIZxVzTaA" type="2001" element="_Qjh_UM7tEeiPGIIZxVzTaA">
+          <children xmi:type="notation:Node" xmi:id="_Qj06Qs7tEeiPGIIZxVzTaA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Qj06Q87tEeiPGIIZxVzTaA" x="15" y="201"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QkH1MM7tEeiPGIIZxVzTaA" type="3005" element="_QjrJQM7tEeiPGIIZxVzTaA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_QkH1Mc7tEeiPGIIZxVzTaA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QkH1Ms7tEeiPGIIZxVzTaA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Qj06QM7tEeiPGIIZxVzTaA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qj06Qc7tEeiPGIIZxVzTaA" x="850" y="200" width="70" height="140"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_sSFxEM7tEeiPGIIZxVzTaA" type="2001" element="_sRpFIM7tEeiPGIIZxVzTaA">
+          <children xmi:type="notation:Node" xmi:id="_sSFxE87tEeiPGIIZxVzTaA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_sSFxFM7tEeiPGIIZxVzTaA" x="20" y="147"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_sSO7AM7tEeiPGIIZxVzTaA" type="3005" element="_sRpFIc7tEeiPGIIZxVzTaA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_sSO7Ac7tEeiPGIIZxVzTaA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sSO7As7tEeiPGIIZxVzTaA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_sSFxEc7tEeiPGIIZxVzTaA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sSFxEs7tEeiPGIIZxVzTaA" x="475" y="197" width="100" height="146"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_aWre8M7uEeiPGIIZxVzTaA" type="2003" element="_a_DtkM7uEeiPGIIZxVzTaA">
+          <children xmi:type="notation:Node" xmi:id="_aWre887uEeiPGIIZxVzTaA" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_aW1P8M7uEeiPGIIZxVzTaA" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_VpQmMM7xEeiPGIIZxVzTaA" type="3010" element="_VoqwUM7xEeiPGIIZxVzTaA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_VpQmMc7xEeiPGIIZxVzTaA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VpQmMs7xEeiPGIIZxVzTaA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_VpQmM87xEeiPGIIZxVzTaA" type="3010" element="_VoqwUs7xEeiPGIIZxVzTaA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_VpQmNM7xEeiPGIIZxVzTaA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VpQmNc7xEeiPGIIZxVzTaA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_VpQmNs7xEeiPGIIZxVzTaA" type="3010" element="_VoqwU87xEeiPGIIZxVzTaA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_VpQmN87xEeiPGIIZxVzTaA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VpQmOM7xEeiPGIIZxVzTaA"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_aW1P8c7uEeiPGIIZxVzTaA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_aW1P8s7uEeiPGIIZxVzTaA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_aWre8c7uEeiPGIIZxVzTaA" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aWre8s7uEeiPGIIZxVzTaA" x="35" y="100" width="258" height="283"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_sLLtQs7sEeiPGIIZxVzTaA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_HL9WgM7uEeiPGIIZxVzTaA" type="4001" element="_HLgqkM7uEeiPGIIZxVzTaA" source="_sSFxEM7tEeiPGIIZxVzTaA" target="_QjrJQc7tEeiPGIIZxVzTaA">
+          <children xmi:type="notation:Node" xmi:id="_HL9WhM7uEeiPGIIZxVzTaA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HL9Whc7uEeiPGIIZxVzTaA" x="-7" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HL9Whs7uEeiPGIIZxVzTaA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HL9Wh87uEeiPGIIZxVzTaA" x="-1" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HL9WiM7uEeiPGIIZxVzTaA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HL9Wic7uEeiPGIIZxVzTaA" x="-4" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_HL9Wgc7uEeiPGIIZxVzTaA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_HL9Wgs7uEeiPGIIZxVzTaA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HL9Wg87uEeiPGIIZxVzTaA" points="[50, 0, -310, 0]$[325, 0, -35, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HL9Wis7uEeiPGIIZxVzTaA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HL9Wi87uEeiPGIIZxVzTaA" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Qjh_UM7tEeiPGIIZxVzTaA" name="Bernadette" incomingEdges="_HLgqkM7uEeiPGIIZxVzTaA" width="7" height="7">
+      <target xmi:type="bank:Client" href="demo.banking#//@bank/@clients.0"/>
+      <semanticElements xmi:type="bank:Client" href="demo.banking#//@bank/@clients.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_QjrJQM7tEeiPGIIZxVzTaA" showIcon="false" workspacePath="/uk.ac.kcl.inf.modelling.banking.design/description/stick-clipart-9.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Client']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Client']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_sRpFIM7tEeiPGIIZxVzTaA" name="Antoine" outgoingEdges="_HLgqkM7uEeiPGIIZxVzTaA" width="10" height="10">
+      <target xmi:type="bank:Manager" href="demo.banking#//@bank/@managers.0"/>
+      <semanticElements xmi:type="bank:Manager" href="demo.banking#//@bank/@managers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_sRpFIc7tEeiPGIIZxVzTaA" showIcon="false" workspacePath="/uk.ac.kcl.inf.modelling.banking.design/description/manager.jpg">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Manager']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Manager']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_HLgqkM7uEeiPGIIZxVzTaA" name="manages" sourceNode="_sRpFIM7tEeiPGIIZxVzTaA" targetNode="_Qjh_UM7tEeiPGIIZxVzTaA">
+      <target xmi:type="bank:Manager" href="demo.banking#//@bank/@managers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_HLgqkc7uEeiPGIIZxVzTaA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@edgeMappings[name='Manages']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_HLgqks7uEeiPGIIZxVzTaA" showIcon="false">
+          <labelFormat>bold</labelFormat>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@edgeMappings[name='Manages']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_a_DtkM7uEeiPGIIZxVzTaA" name="Script">
+      <target xmi:type="bank:Script" href="demo.banking#//@scripts.0"/>
+      <semanticElements xmi:type="bank:Script" href="demo.banking#//@scripts.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_baOKIM7vEeiPGIIZxVzTaA" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@containerMappings[name='Script']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@containerMappings[name='Script']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VoqwUM7xEeiPGIIZxVzTaA" name="Create Account #7 for Bernadette.">
+        <target xmi:type="bank:CreateAccount" href="demo.banking#//@scripts.0/@steps.0"/>
+        <semanticElements xmi:type="bank:CreateAccount" href="demo.banking#//@scripts.0/@steps.0"/>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_VoqwUc7xEeiPGIIZxVzTaA" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@containerMappings[name='Script']/@subNodeMappings[name='ScriptStep']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@containerMappings[name='Script']/@subNodeMappings[name='ScriptStep']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VoqwUs7xEeiPGIIZxVzTaA" name="Deposit £100.0 into account #7.">
+        <target xmi:type="bank:Deposit" href="demo.banking#//@scripts.0/@steps.1"/>
+        <semanticElements xmi:type="bank:Deposit" href="demo.banking#//@scripts.0/@steps.1"/>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_rokgsM7yEeiPGIIZxVzTaA" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@containerMappings[name='Script']/@subNodeMappings[name='ScriptStep']/@conditionnalStyles.2/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@containerMappings[name='Script']/@subNodeMappings[name='ScriptStep']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VoqwU87xEeiPGIIZxVzTaA" name="Withdraw £54.0 from account #7.">
+        <target xmi:type="bank:Withdrawal" href="demo.banking#//@scripts.0/@steps.2"/>
+        <semanticElements xmi:type="bank:Withdrawal" href="demo.banking#//@scripts.0/@steps.2"/>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_n2XP0M7xEeiPGIIZxVzTaA" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@containerMappings[name='Script']/@subNodeMappings[name='ScriptStep']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@containerMappings[name='Script']/@subNodeMappings[name='ScriptStep']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_sK4LQ87sEeiPGIIZxVzTaA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/uk.ac.kcl.inf.modelling.banking.design/description/banking.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer"/>
+    <target xmi:type="bank:BankingProgram" href="demo.banking#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
