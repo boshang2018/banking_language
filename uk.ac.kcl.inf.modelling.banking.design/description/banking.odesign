@@ -19,11 +19,11 @@
           </style>
         </nodeMappings>
         <nodeMappings name="Account" domainClass="Account">
-          <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="aql:'Account #' + self.id + '. Balance: ' + self.credit" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="aql:'Account #' + self.id + '. Balance: ' + self.credit" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
           </style>
         </nodeMappings>
         <edgeMappings name="Manages" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Manager']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Banking%20Diagram']/@defaultLayer/@nodeMappings[name='Client']" targetFinderExpression="feature:clients">

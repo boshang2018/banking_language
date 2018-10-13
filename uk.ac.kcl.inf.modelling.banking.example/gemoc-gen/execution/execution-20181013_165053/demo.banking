@@ -6,7 +6,7 @@
   </bank>
   <scripts start="//@scripts.0/@steps.0">
     <steps xsi:type="bank:CreateAccount" next="//@scripts.0/@steps.1" clientName="Bernadette" accountID="7"/>
-    <steps xsi:type="bank:Deposit" next="//@scripts.0/@steps.2" accountID="7" amount="100.0"/>
-    <steps xsi:type="bank:Withdrawal" accountID="7" amount="54.0"/>
+    <steps xsi:type="bank:Deposit" accountID="7" amount="100.0"/>
+    <steps xsi:type="bank:Withdrawal" next="//@scripts.0/@steps.2" accountID="7" amount="54.0"/>
   </scripts>
 </bank:BankingProgram>
