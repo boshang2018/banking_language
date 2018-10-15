@@ -132,7 +132,7 @@
       </children>
     </children>
     <element xmi:type="henshin:Rule" href="banking.henshin#_hCEKIM70EeiPGIIZxVzTaA"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hCEKIs70EeiPGIIZxVzTaA" x="395" y="38" width="578" height="262"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hCEKIs70EeiPGIIZxVzTaA" x="334" y="38" width="578" height="262"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_oShqkc71EeiIfLl0kJySPA" type="2001" fontName="Segoe UI" italic="true" lineColor="0">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qFrqQ871EeiIfLl0kJySPA" source="defaultAction">
@@ -244,7 +244,7 @@
       </children>
     </children>
     <element xmi:type="henshin:Rule" href="banking.henshin#_5gUMQM71EeiIfLl0kJySPA"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5gd9e871EeiIfLl0kJySPA" x="392" y="338" width="440" height="262"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5gd9e871EeiIfLl0kJySPA" x="334" y="318" width="440" height="262"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_T04FV872EeiIfLl0kJySPA" type="2001" fontName="Segoe UI" italic="true" lineColor="0">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T04FWM72EeiIfLl0kJySPA" source="defaultAction">
@@ -304,7 +304,7 @@
       </children>
     </children>
     <element xmi:type="henshin:Rule" href="banking.henshin#_T04FMM72EeiIfLl0kJySPA"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T04Fgc72EeiIfLl0kJySPA" x="879" y="335" width="440" height="262"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T04Fgc72EeiIfLl0kJySPA" x="796" y="318" width="440" height="262"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_OgS4Ec70EeiPGIIZxVzTaA"/>
   <element xmi:type="henshin:Module" href="banking.henshin#_OgJHEM70EeiPGIIZxVzTaA"/>
