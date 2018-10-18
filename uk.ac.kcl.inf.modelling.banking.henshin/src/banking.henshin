@@ -4,6 +4,7 @@
   <units xsi:type="henshin:Rule" xmi:id="_SQGKoM70EeiPGIIZxVzTaA" name="startScript">
     <lhs xmi:id="_SQGKpc70EeiPGIIZxVzTaA" name="Lhs">
       <nodes xmi:id="_UCPdsM70EeiPGIIZxVzTaA" outgoing="_YMCkoM70EeiPGIIZxVzTaA">
+        <annotations xmi:id="_VCHE8NKGEei6ycp1GjtRRQ" key="Target"/>
         <type href="http://www.example.org/bank#//Script"/>
       </nodes>
       <nodes xmi:id="_U9yf8M70EeiPGIIZxVzTaA" incoming="_YMCkoM70EeiPGIIZxVzTaA">
@@ -77,6 +78,7 @@
         <type href="http://www.example.org/bank#//Bank"/>
       </nodes>
       <nodes xmi:id="_7vDxMM70EeiPGIIZxVzTaA" incoming="_FjbOQM71EeiPGIIZxVzTaA">
+        <annotations xmi:id="_bx59wNKGEei6ycp1GjtRRQ" key="Target"/>
         <type href="http://www.example.org/bank#//Client"/>
         <attributes xmi:id="_BZYPsM71EeiPGIIZxVzTaA" value="name">
           <type href="http://www.example.org/bank#//Person/name"/>
@@ -187,6 +189,7 @@
   <units xsi:type="henshin:Rule" xmi:id="_oShqkM71EeiIfLl0kJySPA" name="movePC">
     <lhs xmi:id="_oSrbkM71EeiIfLl0kJySPA" name="Lhs">
       <nodes xmi:id="_qFrqQM71EeiIfLl0kJySPA" outgoing="_sOM18M71EeiIfLl0kJySPA">
+        <annotations xmi:id="_fpAyMNKGEei6ycp1GjtRRQ" key="Target" value=""/>
         <type href="http://www.example.org/bank#//Script"/>
       </nodes>
       <nodes xmi:id="_q5j-QM71EeiIfLl0kJySPA" incoming="_sOM18M71EeiIfLl0kJySPA" outgoing="_s37vcM71EeiIfLl0kJySPA">
@@ -256,6 +259,7 @@
         </attributes>
       </nodes>
       <nodes xmi:id="_5gUMas71EeiIfLl0kJySPA">
+        <annotations xmi:id="_rmZxQNKGEei6ycp1GjtRRQ" key="Target"/>
         <type href="http://www.example.org/bank#//Account"/>
         <attributes xmi:id="_5gUMa871EeiIfLl0kJySPA" value="accountID">
           <type href="http://www.example.org/bank#//Account/id"/>
@@ -355,6 +359,7 @@
         </attributes>
       </nodes>
       <nodes xmi:id="_T04FOs72EeiIfLl0kJySPA">
+        <annotations xmi:id="_t3oNANKGEei6ycp1GjtRRQ" key="Target"/>
         <type href="http://www.example.org/bank#//Account"/>
         <attributes xmi:id="_T04FO872EeiIfLl0kJySPA" value="accountID">
           <type href="http://www.example.org/bank#//Account/id"/>
