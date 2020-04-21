@@ -2,7 +2,7 @@
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_OgS4EM70EeiPGIIZxVzTaA" type="Henshin" name="banking.henshin_diagram" measurementUnit="Pixel">
   <children xmi:type="notation:Shape" xmi:id="_SQGKoc70EeiPGIIZxVzTaA" type="2001" fontName="Segoe UI" italic="true" lineColor="0">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UCPds870EeiPGIIZxVzTaA" source="defaultAction">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UCPdtM70EeiPGIIZxVzTaA" key="value" value="forbid"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UCPdtM70EeiPGIIZxVzTaA" key="value" value="forbid#1"/>
     </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_SQGKo870EeiPGIIZxVzTaA" type="5001"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_SQGKpM70EeiPGIIZxVzTaA" type="7001">
@@ -323,7 +323,7 @@
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_YMLukM70EeiPGIIZxVzTaA" type="4001" source="_UCPdtc70EeiPGIIZxVzTaA" target="_U9yf8870EeiPGIIZxVzTaA">
     <children xmi:type="notation:DecorationNode" xmi:id="_YMLuk870EeiPGIIZxVzTaA" type="6001">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_YMLulM70EeiPGIIZxVzTaA" x="16" y="13"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_YMLulM70EeiPGIIZxVzTaA" x="-7" y="20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_YMLulc70EeiPGIIZxVzTaA" type="6002">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_YMLuls70EeiPGIIZxVzTaA" x="26" y="-26"/>
@@ -460,5 +460,16 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_T1BPIc72EeiIfLl0kJySPA" fontName="Segoe UI"/>
     <element xmi:type="henshin:Edge" href="banking.henshin#_T04FPc72EeiIfLl0kJySPA"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_T1BPIs72EeiIfLl0kJySPA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_wS4KIIPpEeq66uYWZX0wRQ" type="4001" source="_UCPdtc70EeiPGIIZxVzTaA" target="_U9yf8870EeiPGIIZxVzTaA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_wS4KI4PpEeq66uYWZX0wRQ" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wS4KJIPpEeq66uYWZX0wRQ" x="-24" y="52"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_wS4KJYPpEeq66uYWZX0wRQ" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wS4KJoPpEeq66uYWZX0wRQ" x="62" y="-2"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_wS4KIYPpEeq66uYWZX0wRQ" fontName="Segoe UI"/>
+    <element xmi:type="henshin:Edge" href="banking.henshin#_iQYfwIPpEeq66uYWZX0wRQ"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wS4KIoPpEeq66uYWZX0wRQ" points="[31, 11, -73, -81]$[104, 40, 0, -52]$[104, 71, 0, -21]"/>
   </edges>
 </notation:Diagram>

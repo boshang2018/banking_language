@@ -13,38 +13,62 @@
       <edges xmi:id="_YMCkoM70EeiPGIIZxVzTaA" source="_UCPdsM70EeiPGIIZxVzTaA" target="_U9yf8M70EeiPGIIZxVzTaA">
         <type href="http://www.example.org/bank#//Script/start"/>
       </edges>
-      <formula xsi:type="henshin:Not" xmi:id="_WJpPEM70EeiPGIIZxVzTaA">
-        <child xsi:type="henshin:NestedCondition" xmi:id="_WJpPEc70EeiPGIIZxVzTaA">
-          <conclusion xmi:id="_WJpPEs70EeiPGIIZxVzTaA">
-            <nodes xmi:id="_WJpPE870EeiPGIIZxVzTaA" outgoing="_Xl5KoM70EeiPGIIZxVzTaA">
-              <type href="http://www.example.org/bank#//Script"/>
-            </nodes>
-            <nodes xmi:id="_U15IMM70EeiPGIIZxVzTaA" incoming="_Xl5KoM70EeiPGIIZxVzTaA">
-              <type href="http://www.example.org/bank#//ScriptStep"/>
-            </nodes>
-            <nodes xmi:id="_WJpPF870EeiPGIIZxVzTaA">
-              <type href="http://www.example.org/bank#//ScriptStep"/>
-            </nodes>
-            <edges xmi:id="_Xl5KoM70EeiPGIIZxVzTaA" source="_WJpPE870EeiPGIIZxVzTaA" target="_U15IMM70EeiPGIIZxVzTaA">
-              <type href="http://www.example.org/bank#//Script/current"/>
-            </edges>
-          </conclusion>
-          <mappings xmi:id="_WJpPFM70EeiPGIIZxVzTaA" origin="_UCPdsM70EeiPGIIZxVzTaA" image="_WJpPE870EeiPGIIZxVzTaA"/>
-          <mappings xmi:id="_WJpPGM70EeiPGIIZxVzTaA" origin="_U9yf8M70EeiPGIIZxVzTaA" image="_WJpPF870EeiPGIIZxVzTaA"/>
-        </child>
+      <formula xsi:type="henshin:And" xmi:id="_02f7wIPoEeq66uYWZX0wRQ">
+        <left xsi:type="henshin:Not" xmi:id="_xsIRgYPoEeq66uYWZX0wRQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_xsIRgoPoEeq66uYWZX0wRQ">
+            <conclusion xmi:id="_xsIRg4PoEeq66uYWZX0wRQ" name="1">
+              <nodes xmi:id="_xsIRhIPoEeq66uYWZX0wRQ" outgoing="_xsI4kYPoEeq66uYWZX0wRQ _Xl5KoM70EeiPGIIZxVzTaA">
+                <annotations xmi:id="_xsIRhYPoEeq66uYWZX0wRQ" key="Target"/>
+                <type href="http://www.example.org/bank#//Script"/>
+              </nodes>
+              <nodes xmi:id="_xsIRh4PoEeq66uYWZX0wRQ" incoming="_xsI4kYPoEeq66uYWZX0wRQ">
+                <type href="http://www.example.org/bank#//ScriptStep"/>
+              </nodes>
+              <nodes xmi:id="_U15IMM70EeiPGIIZxVzTaA" incoming="_Xl5KoM70EeiPGIIZxVzTaA">
+                <type href="http://www.example.org/bank#//ScriptStep"/>
+              </nodes>
+              <edges xmi:id="_xsI4kYPoEeq66uYWZX0wRQ" source="_xsIRhIPoEeq66uYWZX0wRQ" target="_xsIRh4PoEeq66uYWZX0wRQ">
+                <type href="http://www.example.org/bank#//Script/start"/>
+              </edges>
+              <edges xmi:id="_Xl5KoM70EeiPGIIZxVzTaA" source="_xsIRhIPoEeq66uYWZX0wRQ" target="_U15IMM70EeiPGIIZxVzTaA">
+                <type href="http://www.example.org/bank#//Script/current"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_xsIRhoPoEeq66uYWZX0wRQ" origin="_UCPdsM70EeiPGIIZxVzTaA" image="_xsIRhIPoEeq66uYWZX0wRQ"/>
+            <mappings xmi:id="_xsI4kIPoEeq66uYWZX0wRQ" origin="_U9yf8M70EeiPGIIZxVzTaA" image="_xsIRh4PoEeq66uYWZX0wRQ"/>
+          </child>
+        </left>
+        <right xsi:type="henshin:Not" xmi:id="_02f7wYPoEeq66uYWZX0wRQ">
+          <child xsi:type="henshin:NestedCondition" xmi:id="_02f7woPoEeq66uYWZX0wRQ">
+            <conclusion xmi:id="_02f7w4PoEeq66uYWZX0wRQ" name="2">
+              <nodes xmi:id="_02f7xIPoEeq66uYWZX0wRQ" outgoing="_YyfgoM70EeiPGIIZxVzTaA">
+                <annotations xmi:id="_02f7xYPoEeq66uYWZX0wRQ" key="Target"/>
+                <type href="http://www.example.org/bank#//Script"/>
+              </nodes>
+              <nodes xmi:id="_02f7x4PoEeq66uYWZX0wRQ" incoming="_YyfgoM70EeiPGIIZxVzTaA">
+                <type href="http://www.example.org/bank#//ScriptStep"/>
+              </nodes>
+              <edges xmi:id="_YyfgoM70EeiPGIIZxVzTaA" source="_02f7xIPoEeq66uYWZX0wRQ" target="_02f7x4PoEeq66uYWZX0wRQ">
+                <type href="http://www.example.org/bank#//Script/current"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_02f7xoPoEeq66uYWZX0wRQ" origin="_UCPdsM70EeiPGIIZxVzTaA" image="_02f7xIPoEeq66uYWZX0wRQ"/>
+            <mappings xmi:id="_02f7yIPoEeq66uYWZX0wRQ" origin="_U9yf8M70EeiPGIIZxVzTaA" image="_02f7x4PoEeq66uYWZX0wRQ"/>
+          </child>
+        </right>
       </formula>
     </lhs>
     <rhs xmi:id="_SQPUkM70EeiPGIIZxVzTaA" name="Rhs">
-      <nodes xmi:id="_UCPdsc70EeiPGIIZxVzTaA" outgoing="_YMCkoc70EeiPGIIZxVzTaA _YyfgoM70EeiPGIIZxVzTaA">
+      <nodes xmi:id="_UCPdsc70EeiPGIIZxVzTaA" outgoing="_YMCkoc70EeiPGIIZxVzTaA _iQYfwIPpEeq66uYWZX0wRQ">
         <type href="http://www.example.org/bank#//Script"/>
       </nodes>
-      <nodes xmi:id="_U9yf8c70EeiPGIIZxVzTaA" incoming="_YMCkoc70EeiPGIIZxVzTaA _YyfgoM70EeiPGIIZxVzTaA">
+      <nodes xmi:id="_U9yf8c70EeiPGIIZxVzTaA" incoming="_YMCkoc70EeiPGIIZxVzTaA _iQYfwIPpEeq66uYWZX0wRQ">
         <type href="http://www.example.org/bank#//ScriptStep"/>
       </nodes>
       <edges xmi:id="_YMCkoc70EeiPGIIZxVzTaA" source="_UCPdsc70EeiPGIIZxVzTaA" target="_U9yf8c70EeiPGIIZxVzTaA">
         <type href="http://www.example.org/bank#//Script/start"/>
       </edges>
-      <edges xmi:id="_YyfgoM70EeiPGIIZxVzTaA" source="_UCPdsc70EeiPGIIZxVzTaA" target="_U9yf8c70EeiPGIIZxVzTaA">
+      <edges xmi:id="_iQYfwIPpEeq66uYWZX0wRQ" source="_UCPdsc70EeiPGIIZxVzTaA" target="_U9yf8c70EeiPGIIZxVzTaA">
         <type href="http://www.example.org/bank#//Script/current"/>
       </edges>
     </rhs>
